@@ -24,6 +24,13 @@ html {
     cursor: pointer;
   }
 
+    body{
+     font-family: 'Inter';
+     font-weight: 900;
+     font-style: normal;
+     font-size: 24px;
+     line-height: 1.3;
+    }
   .container{
     max-width: 1840px;
     padding: 0 15px;
@@ -31,7 +38,7 @@ html {
   }
 
   .header{
-    background-image: url(images/overview_d\ 1.jpg);
+    background-image: url(images/Urus_Background.jpg);
     min-height:100vh;
     background-repeat:no-repeat;
     background-size: cover;
@@ -40,7 +47,9 @@ html {
 
   .header_top{
     display:flex;
-    justify-content: space-between;
+    justify-content:space-between;
+    align-items:center;
+    padding-top:50px;
   }
 
   .button_menu{
@@ -49,18 +58,170 @@ html {
     display: flex;
     flex-direction: column;
     justify-content:space-between;
-    padding: 5 0;
+    padding: 5px 0;
   }
 
   .button_menu span{
     height:3px;
-    width:70px;
-    padding : 10 0 ;
+    width:100%;
     display:block;
     background-color: coral;
   }
 
   .header_content_image{
-    max-height:600px;
-    max-width:1500px;
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:auto;
+    max-width:65%;
+    max-height:65%;
+    display: flex;
+    top:45%;
+    z-index: 1;
+  }
+
+  .header_content{
+    display:flex;
+    justify-content:space-between;
+    flex-direction: column; 
+  }
+
+  .title{
+  font-size:300px;
+  background: linear-gradient(180deg, #100d0d 0%, #c51104 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  }
+
+  .s_title{
+    z-index: 2;
+    font-size: 100px;
+    background: linear-gradient(90deg, #FF5017 0%, #000000 100%) ;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .info{
+    background-color:#f8f8f8;
+    padding:170px 0;
+  }
+
+  .info_text{
+  margin-bottom:5%;
+  position: absolute;
+  left:4%;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 140px;
+  text-transform: uppercase;
+  color: #13171C;
+  }
+
+  .info_image{
+    padding-top:5%;
+    max-width: 99%;
+    max-height: 99%;
+  }
+
+  .info_main{
+    width:100%;
+  }
+   
+  .info_gallery{
+    margin-left: 160px;
+    }
+
+  .info_content{
+    display: flex;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 25px;
+    padding-top:10px;
+    gap:10px;
+    margin-bottom: 170px;
+    padding-left:155px;
+    padding-right:100px;
+    gap:94px;
+  }
+
+  .info_list{
+    column-count: 2;
+    gap:140px;
+  }
+
+  .info_list dt,
+  .info_list dd{
+    display: inline-block;
+  }
+
+  .gallery_foto{
+    max-width: 593px;
+    max-height: 450px;
+    border-radius: 20px;
+  }
+
+  .info_list_line{
+    margin-bottom:22px;
+  }
+
+  .price{
+    font-size:38px;
+    margin-bottom:40px;
+  }
+
+  .order{
+    padding:25px 50px;
+    background-color: #FF5017;
+    font-family: 'Inter';
+    font-weight: 900;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1.3;
+  }
+
+  .color_gallery{
+    background-color: #f8f8f8;
+  }
+
+  .color_text{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 120px;
+    margin-bottom: 40px;
+  }
+
+  .color_gallery_start{
+    max-width: 100%;
+    margin:0 auto;
+  }
+
+  .color_gallery_end{
+    max-width: 100%;
+    margin:0 auto;
+  }
+
+  .color_gallery_box{
+    padding:140px 30px;
+    gap:20px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    background-color: #13171C;
+  }
+
+  .color_gallery_box img{
+    max-width: 100%;
+    border-radius: 20px;
+  }
+
+  .color_box_text{
+    font-size: 36px;
+    color:white;
+    margin-top: 20px;
+    text-transform: uppercase;
   }
