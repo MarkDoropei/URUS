@@ -277,11 +277,58 @@ html {
   }
 
   .footer{
-    text-align: center;
     padding: 15px 0 90px;
-    font-size: 14px;
-    color:white;
-    background-color: #13171C;
+    color:#13171C;
+    background-color:white;
+  }
+
+  .footer_info{
+    display:flex ;
+    justify-content:center;
+    padding:40px 15px;
+  }
+
+  .footer_text{
+    display:flex ;
+    justify-content:space-around;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #13171C;
+    text-align: center;
+    line-height: 40px;
+  }
+
+  .footer_info img{
+    cursor: pointer;
+  }
+
+  .fooetr_link{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 80px !important;
+    text-transform: uppercase;
+    color: #13171C;
+    text-align: center;
+  }
+
+  .footer_a{
+    text-align: center;
+    font-size: 45px;
+    padding:  20px 0;
+  }
+
+  .footer_head{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 80px;
+    text-transform: uppercase;
+    color: #13171C;
+    text-align: center;
   }
 
   .form_input{
@@ -337,7 +384,7 @@ html {
   .clothes_box {
     max-width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-around;
    }
 
   @media (max-width: 1600px){
@@ -525,6 +572,10 @@ html {
     }
 
   @media (max-width: 530px) {
+    .footer_text{
+      max-width:100%;
+      display:block;
+    }
     .title{
       font-size:120px;
     }
