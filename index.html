@@ -10,22 +10,30 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <script defer src="main.js"></script>
     <title>Urus.com</title>
 </head>
 <body>
     <header class="header">
         <div class="container">
-            <div class="header_top">
-                <a class="logo" href="https://www.lamborghiniporrentruy.ch/en/about-us">
+            <a class="logo" href="https://www.lamborghiniporrentruy.ch/en/about-us">
                     <img src="images/Lamborghinilogo.svg">
                 </a>
-            <div class="menu">
-                <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0" class="button_menu">
+            <div class="header_top"> 
+                <button class="button_menu" id="burger">
                     <span></span>
                     <span></span>
                     <span></span>
-                </a>
-            </div>
+                </button>
+                <nav class="menu">
+                    <ul class="menu_list">
+                        <li><a class="menu_link" href="#about_urus">about urus</a></li>
+                        <li><a class="menu_link" href="#our_cars">our cars</a></li>
+                        <li><a class="menu_link" href="#available_color">available colors</a></li>
+                        <li><a class="menu_link" href="#book_car">book a car</a></li>
+                        <li><a class="menu_link" href="#showroom">our car showroom</a></li>                 
+                    </ul>
+                </nav>
             </div>
             <div class="header_content">
                 <h2 class="s_title">FOR HIRE</h2>
@@ -33,10 +41,10 @@
                 <img src="images/overview_d3.png" class="header_content_image">
             </div>
     </header>
- <section class="info">
+ <section class="info" id="about_urus">
         <div class="container">
         <br>
-        <h2 class="info_text">LAMBORCHINI URUS</h2>
+        <h2 class="info_text" href="about_urus">LAMBORCHINI URUS</h2>
         <p></p>
         <img src="images/info_image.png" class="info_image">
         <div class="info_content">
@@ -46,24 +54,25 @@
                 <dd>SUVs</dd>
             </div>
             <div class="info_list_line">
-                <dt>engine power:</dt>
+                <dt>engine power:</dt></li>
                 <dd>650 h.p.</dd>
             </div>
             <div class="info_list_line">
-                <dt>engine capacity:</dt>
+                <dt>engine capacity:</dt></li>
                 <dd>4.0 liter turbo</dd>
             </div>
             <div class="info_list_line">
-                <dt>acceleration 0-100:</dt>
+                <dt>acceleration 0-100:</dt></li>
                 <dd>3.6 seconds</dd>
             </div>
             <div class="info_list_line">    
-                <dt>drive:</dt>
+                <dt>drive:</dt></li>
                 <dd>four-wheel</dd>
             </div>
             <div class="info_list_line">
-                <dt>number of places:</dt>
+                <dt>number of places:</dt></li>
                 <dd>5</dd>
+            </ul>
             </div>
             <div class="info_list_line">
                 <dt>minimum rental period:</dt>
@@ -75,7 +84,7 @@
                 <a href="order.html"><button class="order">order</button></a>
             </div>
         </div>
-        <div class="info_gallery">
+        <div class="info_gallery"  id="our_cars">
             <img src="images/urus_foto_3.jpg">
             <img src="images/urus_foto_3.jpg">
             <img src="images/urus_foto_2.jpg">
@@ -83,7 +92,7 @@
         </div>
     </div>
     </section>
-     <div class="color">
+     <div class="color"  id="available_color">
         <p class="color_text">
             CHOOSE A COLOR
         </p>
@@ -103,14 +112,50 @@
     <p class="clothes_text">
         ALSO COMES WITH A SET OF MERCH AS A GIFT</p>
     <div class="clothes_box">
-        <img src="images/clothes_1.jpg">
-        <img src="images/clothes_2.jpg">
-        <img src="images/clothes_3.jpg">
-        <img src="images/clothes_4.jpg">
-        <img src="images/clothes_5.jpg">
+        <div class="size">
+            <img src="images/clothes_1.jpg">
+            <form class="clothes_form">
+            <label>choose your size</label>
+            <select required>
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+                <option>XL-XXL</option>
+            </select>
+        </form>
+        </div>
+        <div class="size">
+            <img src="images/clothes_3.jpg">
+            <form class="clothes_form">
+            <label>choose your size</label>
+            <select required>
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+                <option>XL-XXL</option>
+            </select>
+        </form>
+        </div>
+        <div class="size">
+            <img src="images/clothes_5.jpg">
+            <form class="clothes_form">
+            <label>choose your size</label>
+            <select required>
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+                <option>XL-XXL</option>
+            </select>
+        </form>
+        </div>
+    </div>
+    <div class="clothes_form_2">
+        <form>
+            <button type="submit" class="clothes_button">order</button>
+        </form>
     </div>
 </section>
- <section class="contacts">
+ <section class="contacts" id="book_car">
     <div class="container">
         <h2 class="contacts_title">
             book a lamborghini urus car
@@ -133,7 +178,7 @@
     </div>
 </section>
 <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A24db0b8973ad330a08c3ff3b310262db90471a2d43851e65d80ebb220004998e&amp;source=constructor" 
-width="100%" height="450" frameborder="0"></iframe>
+width="100%" height="450" frameborder="0" id="showroom"></iframe>
 <footer class="footer">
         <div class="footer_text">
         <p><strong>customer info </strong><br>FAQ<br>returns & refunds<br>terms and conditions<br></p>
